@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How many fingers?</title>
+
+</head>
+<body>
+<form onsubmit="checkGuess()">
+<h3>How many fingers am i holding up?</h3>
+<label for="answer">
+<input type="text" name="answer" id="Ans">
+<button type="submit">
+Guess    
+    </button>
+    </label>
+    </form>
+    
+<script>
+var userAns = document.getElementById("Ans").value;  
+   
+ function checkGuess(){
+     var currAns = Math.floor((Math.random() * 5)+1);
+      if(userAns == currAns )
+         { alert("You got it right");
+         
+         }
+     else{ alert("Wrong,the answer was  "+ currAns);
+   }
+ }  
+ 
+
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
